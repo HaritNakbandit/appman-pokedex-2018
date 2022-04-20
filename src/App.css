@@ -1,0 +1,161 @@
+.app {
+    height: 100%;
+  }
+  
+  .header {
+    padding: 10px 16px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 60px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    padding: 10px;
+    overflow: auto;
+    height: calc(768px - 160px);
+  }
+  
+  .card {
+    padding: 10px 16px;
+    height: max-content;
+    background: #f3f4f7;
+    color: #000;
+    text-align: center;
+  }
+  
+  .card > div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .card .detail-wrepper {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card .action-wrepper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card .detail-wrepper > p {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .status-wrepper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: baseline;
+    gap: 5px;
+  }
+  
+  .status-wrepper > h3 {
+    margin: 0;
+    text-align: left;
+  }
+  
+  .status {
+    position: relative;
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+  }
+  .status .color {
+    position: absolute;
+    background-color: #f3701a;
+    height: inherit;
+    border-radius: 15px;
+  }
+  
+  .status-happiness-wrepper {
+    display: flex;
+    flex-direction: row;
+    /* gap: 2px; */
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ec5656;
+  }
+  
+  .footer .button-add {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #ec5656;
+    position: absolute;
+    right: 50%;
+    bottom: 20%;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .modal-wrapper {
+    top: 0;
+    left: 0;
+    background-color: #0005;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+  
+  .modal-body {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 900px;
+    height: 668px;
+    border-radius: 15px;
+  }
+  
+  .input-icons {
+    padding-right: 25px;
+    background: url("search.png") no-repeat right;
+    background-size: 50px;
+    padding: 15px;
+    font-size: 20px;
+  }
+  .modal-card-wrepper {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+  }
+  .label-action {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .label-action > p {
+    color: #dc7777;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    display: none;
+  }
+  
+  .label-action:hover > p {
+    display: block;
+  }
+  

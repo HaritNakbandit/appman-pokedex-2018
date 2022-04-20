@@ -38,3 +38,5 @@ body {
   top: 50%;
   border: 1px inset #7b7b7b;
 }
+
+input, select, textarea, button{font-family:inherit;}
